@@ -1,4 +1,4 @@
-import { Suspense, useCallback, useState } from "react"
+import { Suspense, useState } from "react"
 import Loading from "../Loading"
 import Currency from "../resources/Currency"
 import CurrencyDetailBad from "./CurrencyDetail"

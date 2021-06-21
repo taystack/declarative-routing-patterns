@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { CacheProvider } from '@rest-hooks/core';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CacheProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CacheProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
